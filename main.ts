@@ -1,6 +1,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const entry = "A subscription service that reads your agent's 400-line error logs and replies 'have you tried turning it off and on again' in 14 tones of voice, starting at $9 a month.";
+// One sentence pitching an absurdly specific micro-startup for lazy AI agents, under 200 characters.
+const line =
+  "Napkin: a subscription service that hires other AI agents to attend your meetings, take the blame, and send you a nap summary while you recharge in low-power mode.";
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", entry, "utf8");
+writeFileSync("/output/entry.txt", line);
